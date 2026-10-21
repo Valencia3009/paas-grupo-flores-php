@@ -1,0 +1,19 @@
+# Archivos privados
+.env
+.env.*
+*.key
+*.pem
+
+# Archivos de Git
+.git
+.gitignore
+
+# Respaldos y datos exportados
+productos-datos.sql
+*.sql.gz
+*.sql.bak
+*.dump
+
+# Archivos innecesarios
+*.log
+*.tmp

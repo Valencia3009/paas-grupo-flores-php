@@ -1,0 +1,18 @@
+# Variables de entorno y credenciales
+.env
+.env.*
+!.env.example
+
+# Respaldos y datos exportados
+productos-datos.sql
+*.sql.gz
+*.sql.bak
+*.dump
+
+# Archivos temporales
+*.log
+*.tmp
+
+# Certificados y claves privadas
+*.key
+*.pem
