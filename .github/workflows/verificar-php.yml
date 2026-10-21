@@ -1,0 +1,29 @@
+
+name: Verificar sistema PHP - Grupo Flores
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  verificar-php:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Descargar codigo del repositorio
+        uses: actions/checkout@v4
+
+      - name: Configurar PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.3'
+          extensions: pdo_mysql
+
+      - name: Verificar sintaxis de archivos PHP
+        run: |
+          find . -name "*.php" -type f -print0 |
+            xargs -0 -r -n 1 php -l
