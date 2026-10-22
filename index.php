@@ -1,4 +1,3 @@
-
 <?php
 
 require_once __DIR__ . '/conexion.php';
@@ -166,7 +165,7 @@ $registrado = ($_GET['mensaje'] ?? '') === 'registrado';
 
 <header>
     <h1>Grupo Flores</h1>
-    <p>Sistema de Gestión de Inventario</p>
+    <p>Sistema de Gestión de Inventario - Version 2.0</p>
 </header>
 
 <main>
